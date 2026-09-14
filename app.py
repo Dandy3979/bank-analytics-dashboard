@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__, template_folder="template", static_folder="static")
 CORS(app)
 
-BASE = os.path.dirname(os.path.abspath(__file__))
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
 def load_csv(filename):
     try:
