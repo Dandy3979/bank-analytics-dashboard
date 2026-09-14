@@ -3,7 +3,7 @@
  * Flask API: http://127.0.0.1:5050
  */
 
-const API = "http://127.0.0.1:5050";
+const API = window.location.origin;
 
 const COLORS = [
   "#1565c0","#2e7d32","#e65100","#6a1b9a","#00695c",
